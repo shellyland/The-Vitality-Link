@@ -10,7 +10,7 @@ st.markdown("**Facilitating reliable, non-medical support for the Golden Generat
 
 # Chat-style welcome message
 with st.chat_message("GRACE"):
-    st.markdown("Welcome to The Vitality Link! I’m GRACE, your AI-powered concierge. As an Honoree, you deserve seamless solutions—whether it’s errands, transportation, wellness, or staying connected. Plus, with add-on enhancements, living fully has never been easier.")
+    st.markdown("Welcome to The Vitality Link! I’m GRACE, your AI-powered concierge. As an Honoree, you deserve seamless solutions—whether it’s errands, transportation, wellness, or staying connected. Additionally, with enriching add-ons, living fully has never been easier.")
 
 # Honoree (Client) Intake Form
 st.markdown("### Get Started with GRACE")
