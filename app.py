@@ -5,8 +5,8 @@ st.set_page_config(page_title="The Vitality Link Introduces GRACE", layout="cent
 
 # Branding
 st.title("GRACE – Guided Resources and Care Experience")
-st.subheader("The Vitality Link | Lifestyle Concierge for Active Agers")
-st.markdown("**Facilitating reliable, non-medical support for the Golden Generation.**")
+st.subheader("The Vitality Link | Enriching Lifestyle Connections for the Golden Generation")
+st.markdown("**Enhancing life’s rhythm with trusted, non-medical resources.**")
 
 # Chat-style welcome message
 with st.chat_message("GRACE"):
