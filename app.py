@@ -60,6 +60,7 @@ These services are designed to enrich daily living and may not be covered by ins
 st.markdown("### Honoree Guidelines")
 st.info("""
 Our services are primarily designed for able-bodied adults aged 50 and older who seek non-medical solutions. At this time, we are unable to accommodate individuals requiring mobility assistance, personal care, or medical support.  
+
 Eligibility for Medicaid or Medicare-covered services depends on needs and assessments.  
 
 """)
