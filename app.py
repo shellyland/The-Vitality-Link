@@ -10,10 +10,10 @@ st.markdown("**Enhancing life’s rhythm with trusted, non-medical resources.**"
 
 # Chat-style welcome message
 with st.chat_message("GRACE"):
-    st.markdown("Welcome to The Vitality Link! I’m GRACE, your AI-powered concierge. As an Honoree, you deserve seamless solutions—whether it’s errands, transportation, wellness, or staying connected. Additionally, with enriching add-ons, living fully has never been easier.")
+    st.markdown("Welcome to The Vitality Link! I’m GRACE, your AI-powered concierge. As an Honoree, you are more than just a client—you are valued, celebrated, and worthy of seamless solutions. Whether it’s errands, transportation, wellness, or staying connected, I’m here to ensure you have the support you need.")
 
 # Honoree (Client) Intake Form
-st.markdown("### Get Started with GRACE")
+st.markdown("### Honoree Form")
 with st.form("honoree_form"):
     full_name = st.text_input("Full Name")
     email = st.text_input("Email Address")
@@ -21,12 +21,12 @@ with st.form("honoree_form"):
     age = st.number_input("Age", min_value=50, max_value=120, step=1)
     insurance = st.selectbox(
         "Insurance Coverage Type",
-        ["Select", "Medicaid", "Medicare Advantage", "Private Insurance", "Unsure"]
+        ["Select", "Medicaid", "Medicare", "Private Insurance", "Unsure"]
     )
     services_interested = st.multiselect(
         "Which services are you interested in?",
-        ["Errand Assistance", "Transportation", "Tech Help", "Wellness Check-Ins", "Social Events", 
-         "Financial Literacy", "Fitness Referrals", "Event Planning", "Digital Support", "Sexual Health Awareness"]
+        ["Errand Assistance", "Transportation", "Wellness Check-Ins", "Social Events", 
+         "Financial Literacy", "Fitness & Wellness", "Community Engagment", "Digital Support", "Sexual Health Awareness", "Event Planning"]
     )
     submit = st.form_submit_button("Submit")
 
@@ -37,14 +37,14 @@ if submit:
 # Core services section
 st.markdown("### Core Services (May Be Covered by Medicaid, Medicare Advantage, or Private Health Insurance)")
 st.markdown("""
-These services may be eligible under Virginia’s Medicaid Home and Community-Based Services (HCBS) waivers, such as the CCC Plus Waiver, or through supplemental Medicare Advantage plans.
+These services may be eligible under Virginia’s Medicaid Home and Community-Based Services (HCBS) waivers, such as the CCC Plus Waiver, or through supplemental Medicare Advantage plans. If a service is not covered by insurance, it can be added as a private-pay option or through sponsorships.
 
 - **Errand Assistance** – Grocery shopping, prescription pickup, pet walking, post office trips  
 - **Appointment Transportation** – Non-medical rides to doctors, wellness visits, salons, etc.  
-- **Wellness & Independence Support** – Encouraging movement, mindfulness, and enrichment activities that promote self-sufficiency (non-clinical prompts)  
-- **Technology Assistance** – Smartphones, social media, and online tools to stay connected  
-- **Wellness Check-Ins** – Friendly visits or calls focused on wellbeing  
-- **Community-Based Social Engagement** – Events, volunteer opportunities, legacy-building and group activities
+- **Wellness & Independence Support** – Encouraging movement, mindfulness, and enrichment activities that promote self-sufficiency, friendly visits or calls focused on wellbeing  (non-clinical prompts)  
+- **Technology Assistance** – Smartphones, social media, and online tools to stay connected, Organizing photos, music, email setup   
+- **Community-Based Social Engagement** – Events, volunteer opportunities, legacy-building and group activities, hobby encouragement, games
+- **Fitness & Wellness Referrals** – Trainers, senior workouts, group activities
 """)
 
 # Add-on services section
@@ -52,17 +52,14 @@ st.markdown("### Add-On Enhancements (Private Pay or Grant-Funded Options)")
 st.markdown("""
 These services are designed to enhance a vibrant lifestyle and are available as add-ons or through sponsorships.
 
-- **Financial Literacy Education** – Budgeting, avoiding scams, accessing benefits  
-- **Fitness & Wellness Referrals** – Trainers, senior workouts, group activities  
-- **Event Planning** – Celebrations, meetups, enrichment activities, hobby encouragement, games  
-- **Digital Support** – Organizing photos, music, email setup  
-- **Sexual Health Awareness** – Sexual wellness education for active agers
+- **Financial Literacy Education** – Budgeting, avoiding scams, accessing benefits       
+- **Sexual Health Awareness** – Sexual wellness education
 """)
 
 # Eligibility section
 st.markdown("### Coverage Guidelines")
 st.info("""
-Our services are primarily designed for able-bodied, active agers aged 50 and older who seek non-medical solutions. At this time, we are unable to accommodate individuals requiring mobility assistance, personal care, or medical support.  
+Our services are primarily designed for able-bodied adults aged 50 and older who seek non-medical solutions. At this time, we are unable to accommodate individuals requiring mobility assistance, personal care, or medical support.  
 Eligibility for Medicaid or Medicare-covered services depends on needs and assessments.  
 
 """)
