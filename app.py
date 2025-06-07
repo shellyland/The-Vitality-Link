@@ -62,9 +62,9 @@ These services are designed to enhance a vibrant lifestyle and are available as 
 # Eligibility section
 st.markdown("### Coverage Guidelines")
 st.info("""
-Our services are primarily designed for able-bodied, active agers aged 65 and older who seek non-medical support. At this time, we are unable to accommodate individuals requiring mobility assistance, personal care, or medical support.  
+Our services are primarily designed for able-bodied, active agers aged 50 and older who seek non-medical solutions. At this time, we are unable to accommodate individuals requiring mobility assistance, personal care, or medical support.  
 Eligibility for Medicaid or Medicare-covered services depends on needs and assessments.  
-GRACE helps match each honoree with the appropriate service path and support team.
+
 """)
 
 # Footer and contact
