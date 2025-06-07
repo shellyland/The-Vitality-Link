@@ -48,9 +48,9 @@ These services may be eligible under Virginia’s Medicaid Home and Community-Ba
 """)
 
 # Add-on services section
-st.markdown("### Add-On Enhancements (Private-Pay Add-Ons)")
+st.markdown("### Private-Pay Add-Ons")
 st.markdown("""
-These services are designed to enrich daily living and are available as private-pay add-ons.
+These services are designed to enrich daily living and may not be covered by insurance. They are available as private-pay add-ons or through sponsorships and grant funding.
 
 - **Financial Literacy Education** – Budgeting, avoiding scams, accessing benefits       
 - **Sexual Health Awareness** – Sexual wellness education
