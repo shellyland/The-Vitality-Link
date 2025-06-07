@@ -6,9 +6,35 @@ st.set_page_config(page_title="The Vitality Link Introduces GRACE", layout="cent
 # Branding
 st.title("GRACE – Guided Resources and Care Experience")
 st.subheader("The Vitality Link | Lifestyle Concierge for Active Agers")
-st.markdown("**Facilitating reliable, non-medical support for the Golden Generation**")
+st.markdown("**Facilitating reliable, non-medical support for the Golden Generation.**")
 
-# Core services
+# Chat-style welcome message
+with st.chat_message("GRACE"):
+    st.markdown("Welcome to The Vitality Link! I’m GRACE, your AI-powered concierge. Here to make life easier—not out of necessity, but because you deserve it. As an honoree, your journey is about thriving, not just getting by.")
+
+# Honoree (Client) Intake Form
+st.markdown("### Get Started with GRACE")
+with st.form("honoree_form"):
+    full_name = st.text_input("Full Name")
+    email = st.text_input("Email Address")
+    phone = st.text_input("Phone Number (Optional)")
+    age = st.number_input("Age", min_value=50, max_value=120, step=1)
+    insurance = st.selectbox(
+        "Insurance Coverage Type",
+        ["Select", "Medicaid", "Medicare Advantage", "Private Insurance", "Unsure"]
+    )
+    services_interested = st.multiselect(
+        "Which services are you interested in?",
+        ["Errand Assistance", "Transportation", "Tech Help", "Wellness Check-Ins", "Social Events", 
+         "Financial Literacy", "Fitness Referrals", "Event Planning", "Digital Support", "Sexual Health Awareness"]
+    )
+    submit = st.form_submit_button("Submit")
+
+if submit:
+    st.success(f"Thank you, {full_name}! GRACE will follow up at {email}.")
+    st.info("You're now on your way to personalized, dignified lifestyle support.")
+
+# Core services section
 st.markdown("### Core Services (May Be Covered by Medicaid, Medicare Advantage, or Private Health Insurance)")
 st.markdown("""
 These services may be eligible under Virginia’s Medicaid Home and Community-Based Services (HCBS) waivers, such as the CCC Plus Waiver, or through supplemental Medicare Advantage plans.
@@ -21,7 +47,7 @@ These services may be eligible under Virginia’s Medicaid Home and Community-Ba
 - **Community-Based Social Engagement** – Events, volunteer opportunities, legacy-building and group activities
 """)
 
-# Add-on services
+# Add-on services section
 st.markdown("### Add-On Enhancements (Private Pay or Grant-Funded Options)")
 st.markdown("""
 These services are designed to enhance a vibrant lifestyle and are available as add-ons or through sponsorships.
@@ -41,10 +67,7 @@ Eligibility for Medicaid or Medicare-covered services depends on needs and asses
 GRACE helps match each honoree with the appropriate service path and support team.
 """)
 
-# Closing
+# Footer and contact
 st.markdown("---")
 st.markdown("*GRACE is empowered by IND Designs*")
 st.markdown("For support, email **shellyland@thevitalitylink.com**")
-
-
-
