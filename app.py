@@ -15,15 +15,20 @@ st.markdown("""
     }
 
     div[data-testid="stTabs"] button:hover {
-        color: #D8A25C !important;  /* Lighter, golden bronze on hover */
+        color: #D8A25C !important;
         border-bottom: 2px solid #D8A25C;
         background-color: #fefbf8;
     }
 
     div[data-testid="stTabs"] button[aria-selected="true"] {
         color: #CD7F32 !important;
-        border-bottom: 3px solid #CD7F32;
+        border-bottom: 3px solid #CD7F32 !important;
         background-color: #fffaf3;
+    }
+
+    /* REMOVE/OVERRIDE DEFAULT RED LINE UNDER TABS */
+    div[data-testid="stTabs"] > div[role="tablist"] {
+        border-bottom: 2px solid #CD7F32;  /* Bronze line instead of red */
     }
 
     /* MAILTO LINK STYLING */
