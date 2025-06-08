@@ -5,7 +5,7 @@ st.set_page_config(page_title="The Vitality Link Introduces GRACE", layout="cent
 
 # Branding
 st.title("GRACE – Guided Resources and Care Experience")
-st.subheader("The Vitality Link | Enriching Lifestyle Connections for the Golden Generation")
+st.subheader("The Vitality Link | Golden Lifestyle Solutions")
 st.markdown("**Elevating life’s rhythm with trusted, non-medical resources.**")
 
 # Create tabs
