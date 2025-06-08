@@ -8,37 +8,38 @@ st.markdown("""
     <style>
     /* TAB STYLING */
     div[data-testid="stTabs"] button {
-        color: #8c5621;  /* Deep bronze text */
+        color: #CD7F32;  /* Classic Bronze */
         font-weight: bold;
-        background-color: #fdfaf5;  /* Optional soft cream background */
+        background-color: #F9F5EF;
         border-bottom: 2px solid transparent;
     }
 
     div[data-testid="stTabs"] button:hover {
-        color: #b08d57 !important;  /* Lighter bronze on hover */
-        border-bottom: 2px solid #b08d57;
-        background-color: #f8f1e9;
+        color: #D8A25C !important;  /* Lighter, golden bronze on hover */
+        border-bottom: 2px solid #D8A25C;
+        background-color: #fefbf8;
     }
 
     div[data-testid="stTabs"] button[aria-selected="true"] {
-        color: #b08d57 !important;  /* Selected tab */
-        border-bottom: 3px solid #b08d57;
-        background-color: #fcf7f1;
+        color: #CD7F32 !important;
+        border-bottom: 3px solid #CD7F32;
+        background-color: #fffaf3;
     }
 
     /* MAILTO LINK STYLING */
     a[href^="mailto"] {
-        color: #8c5621 !important;
+        color: #CD7F32 !important;
         font-weight: bold;
         text-decoration: none;
     }
 
     a[href^="mailto"]:hover {
-        color: #b08d57 !important;
+        color: #D8A25C !important;
         text-decoration: underline;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Branding
 st.title("GRACE – Guided Resources and Care Experience")
