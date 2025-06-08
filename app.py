@@ -119,4 +119,6 @@ with form_tab:
 # Footer and contact
 st.markdown("---")
 st.markdown("*GRACE is empowered by IND Designs*")
-st.markdown('For support, email <a href="mailto:shellyland@thevitalitylink.com">shellyland@thevitalitylink.com</a>', unsafe_allow_html=True)
+st.markdown('For support, email [shellyland@thevitalitylink.com](mailto:shellyland@thevitalitylink.com)')
+
+
