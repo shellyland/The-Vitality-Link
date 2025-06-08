@@ -10,7 +10,7 @@ st.markdown("**Elevating life’s rhythm with trusted, non-medical resources.**"
 
 # Chat-style welcome message
 with st.chat_message("GRACE"):
-    st.markdown("Welcome to The Vitality Link! I’m GRACE, your personal concierge. If you're here, you value a higher quality of life — and I'm here to help. We call our clients **Honorees** because you are more than just a client. You are valued, celebrated, and worthy of seamless support. Whether you need a hand with errands, non-medical transportation, wellness check-ins, or just staying connected with the world around you — I’m here to guide you every step of the way.")
+    st.markdown("Welcome to The Vitality Link! I’m GRACE, your personal concierge. If you're here, you value a higher quality of life — and I'm here to help. We call our clients **Honorees** because you are more than just a client. Whether you need a hand with errands, non-medical transportation, wellness check-ins, or just staying connected with the world around you — I’m here to guide you every step of the way.")
 
 # Honoree (Client) Intake Form
 st.markdown("### Honoree Form")
