@@ -37,7 +37,7 @@ if submit:
 # Core services section
 st.markdown("### Core Services (May Be Covered by Medicaid, Medicare, or Private Health Insurance)")
 st.markdown("""
-These services may be eligible under Virginia’s Medicaid Home and Community-Based Services (HCBS) waivers, such as the CCC Plus Waiver, or through supplemental Medicare plans. If a service is not covered by insurance, it would be an out-of-pocket expense or through sponsorships.
+These services may be eligible under Virginia’s Medicaid Home and Community-Based Services (HCBS) waivers, such as the CCC Plus Waiver, or through supplemental Medicare plans. If a service is not covered by insurance, it would be an out-of-pocket expense or via sponsorships.
 
 - **Errand Assistance** – Grocery shopping, prescription pickup, pet walking, post office trips  
 - **Appointment Transportation** – Non-medical rides to doctors, salons, etc.  
