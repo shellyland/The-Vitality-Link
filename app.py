@@ -3,6 +3,43 @@ import streamlit as st
 # Page configuration
 st.set_page_config(page_title="The Vitality Link Introduces GRACE", layout="centered")
 
+# Custom CSS for bronze styling (tabs + mail link)
+st.markdown("""
+    <style>
+    /* TAB STYLING */
+    div[data-testid="stTabs"] button {
+        color: #8c5621;  /* Deep bronze text */
+        font-weight: bold;
+        background-color: #fdfaf5;  /* Optional soft cream background */
+        border-bottom: 2px solid transparent;
+    }
+
+    div[data-testid="stTabs"] button:hover {
+        color: #b08d57 !important;  /* Lighter bronze on hover */
+        border-bottom: 2px solid #b08d57;
+        background-color: #f8f1e9;
+    }
+
+    div[data-testid="stTabs"] button[aria-selected="true"] {
+        color: #b08d57 !important;  /* Selected tab */
+        border-bottom: 3px solid #b08d57;
+        background-color: #fcf7f1;
+    }
+
+    /* MAILTO LINK STYLING */
+    a[href^="mailto"] {
+        color: #8c5621 !important;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a[href^="mailto"]:hover {
+        color: #b08d57 !important;
+        text-decoration: underline;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Branding
 st.title("GRACE – Guided Resources and Care Experience")
 st.subheader("The Vitality Link | Golden Lifestyle Solutions")
@@ -76,4 +113,4 @@ with form_tab:
 # Footer and contact
 st.markdown("---")
 st.markdown("*GRACE is empowered by IND Designs*")
-st.markdown("For support, email **shellyland@thevitalitylink.com**")
+st.markdown('For support, email <a href="mailto:shellyland@thevitalitylink.com">shellyland@thevitalitylink.com</a>', unsafe_allow_html=True)
