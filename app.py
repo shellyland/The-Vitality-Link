@@ -26,7 +26,7 @@ with st.form("honoree_form"):
     services_interested = st.multiselect(
         "Which services are you interested in?",
         ["Errand Assistance", "Appointment Transportation", "Wellness & Independence Support", "Technology Assistance", 
-         "Community-Based Social Engagement", "Fitness & Wellness Referrals", "Financial Literacy Education", "Sexual Health Awareness"]
+         "Community-Based Social Engagement", "Fitness & Wellness", "Financial Literacy Education", "Sexual Health Awareness"]
     )
     submit = st.form_submit_button("Submit")
 
@@ -40,17 +40,16 @@ st.markdown("""
 These services may be eligible under Virginia’s Medicaid Home and Community-Based Services (HCBS) waivers, such as the CCC Plus Waiver, or through supplemental Medicare plans. If a service is not covered by insurance, it can be added as a private-pay option or through sponsorships.
 
 - **Errand Assistance** – Grocery shopping, prescription pickup, pet walking, post office trips  
-- **Appointment Transportation** – Non-medical rides to doctors, wellness visits, salons, etc.  
-- **Wellness & Independence Support** – Encouraging movement, mindfulness, enrichment activities that promote self-sufficiency, friendly visits or calls focused on wellbeing 
+- **Appointment Transportation** – Non-medical rides to doctors, salons, etc.  
+- **Wellness & Independence Support** – Encouraging movement, senior workouts, mindfulness, enrichment activities that promote self-sufficiency, friendly visits or calls focused on wellbeing 
 - **Technology Assistance** – Smartphones, social media, online tools to stay connected, organizing photos, music, email setup   
 - **Community-Based Social Engagement** – Events, volunteer opportunities, legacy-building, group activities, hobby encouragement, games
-- **Fitness & Wellness Referrals** – Trainers, senior workouts, group activities
 """)
 
 # Add-on services section
-st.markdown("### Private-Pay Add-Ons")
+st.markdown("### Out-of-Pocket Services")
 st.markdown("""
-These services are designed to enrich daily living and may not be covered by insurance. They are available as private-pay add-ons or through sponsorships and grant funding.
+These services are designed to enrich daily living and may not be covered by insurance. They are available as out-of-pocket services or through sponsorships and grant funding.
 
 - **Financial Literacy Education** – Budgeting, avoiding scams, accessing benefits       
 - **Sexual Health Awareness** – Sexual wellness education
@@ -61,7 +60,7 @@ st.markdown("### Honoree Guidelines")
 st.info("""
 Our services are primarily designed for able-bodied adults aged 50 and older who seek non-medical solutions. At this time, we are unable to accommodate individuals requiring mobility assistance, personal care, or medical support.  
 
-Eligibility for Medicaid or Medicare-covered services depends on needs and assessments.  
+Eligibility for Medicaid or Medicare covered services depends on needs and assessments.  
 
 """)
 
