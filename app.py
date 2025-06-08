@@ -19,7 +19,7 @@ with welcome_tab:
         
         We call our clients **Honorees** because you are more than just a client — you are valued, celebrated, and worthy of seamless support. 
         
-        Whether you need a hand with errands, non-medical transportation, wellness check-ins, or just staying connected with the world around you — I’ll guide you every step of the way.
+        Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support or social enrichment — I’ll guide you every step of the way.
         """)
 
 # Services tab
