@@ -54,16 +54,11 @@ st.markdown("**Elevating life’s rhythm with trusted, non-medical resources.**"
 # Create tabs
 roots_tab, welcome_tab, services_tab, form_tab = st.tabs(["Our Roots", "Welcome", "Services", "Honoree Form"])
 
+# Roots tab
 with roots_tab:
     st.markdown("## Our Roots")
-    st.image("your_header_image.jpg", use_column_width=True)
     st.markdown("""
-   # Our Roots section
-st.markdown("---")
-st.markdown("## Our Roots")
-st.markdown("""
 At **The Vitality Link**, we don’t just serve — we honor.
-
 Our family tree logo represents more than design — it reflects our values:
 
 - **Connection** – A trusted network of resources and meaningful relationships  
@@ -71,10 +66,6 @@ Our family tree logo represents more than design — it reflects our values:
 - **Roots** – Inspired by **Ma Clemmie**, my second mom — whose strength, love, and resilience shaped my world. When she became unwell, I had the honor of caring for her — a full-circle act of love that now guides everything I do.  
 - **Elevation** – Because life’s rhythm, like trees, is about rising, reaching, and thriving — at every age.
 """)
-
-    
-
-    """)
 
 # Welcome tab
 with welcome_tab:
