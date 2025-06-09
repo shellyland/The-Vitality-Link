@@ -60,8 +60,8 @@ with roots_tab:
 At **The Vitality Link**, we don’t just serve — we honor.
 Our family tree logo represents more than a design — it reflects our values:
 
-- **Connection** – A trusted network of resources and meaningful relationships  
-- **Growth** – Supporting vitality, independence, and well-being  
+- **Connection** – A trusted network of resources and meaningful relationships.  
+- **Growth** – Supporting vitality, independence, and well-being.  
 - **Roots** – Inspired by **Ma Clemmie**, grandmother/second mom — whose love, nurturing and resilience shaped my world. When she became unwell, I was her caregiver — which was a full-circle act.  
 - **Elevation** – Because life’s rhythm, like trees, is about rising, reaching, and thriving — at every age.
 """)
