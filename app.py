@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.image("your_header_image.jpg", use_column_width=True)
+
 # Page configuration
 st.set_page_config(page_title="The Vitality Link | Golden Lifestyle Solutions", layout="centered")
 
