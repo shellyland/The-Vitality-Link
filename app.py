@@ -69,9 +69,9 @@ Our family tree logo represents more than a design — it reflects our values:
 
 # Welcome tab
 with welcome_tab:
-        st.markdown("GRACE"):
+        st.markdown("### Welcome to The Vitality Link!"):
         st.markdown("""
-        Welcome to The Vitality Link! I’m GRACE, your personal concierge. If you're here, you value a higher quality of life — and I can help. 
+        I’m GRACE, your personal concierge. If you're here, you value a higher quality of life — and I can help. 
         
         We call our clients **Honorees** because you are more than just a client — you are valued, celebrated, and worthy of seamless support. 
         
