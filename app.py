@@ -69,7 +69,7 @@ Our family tree logo represents more than a design — it reflects our values:
 
 # Welcome tab
 with welcome_tab:
-        st.markdown("### Welcome to The Vitality Link!"):
+        st.markdown("### Welcome to The Vitality Link!")
         st.markdown("""
         I’m GRACE, your personal concierge. If you're here, you value a higher quality of life — and I can help. 
         
