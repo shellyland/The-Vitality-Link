@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page configuration
-st.set_page_config(page_title="The Vitality Link Introduces GRACE", layout="centered")
+st.set_page_config(page_title="The Vitality Link | Golden Lifestyle Solutions", layout="centered")
 
 # Custom CSS for bronze styling (tabs + mail link)
 st.markdown("""
@@ -47,9 +47,8 @@ st.markdown("""
 
 
 # Branding
-st.title("GRACE – Guided Resources and Care Experience")
-st.subheader("The Vitality Link | Golden Lifestyle Solutions")
-st.markdown("**Elevating life’s rhythm with trusted, non-medical resources.**")
+st.title("The Vitality Link | Golden Lifestyle Solutions")
+st.subheader("**Elevating life’s rhythm with trusted, non-medical resources.**")
 
 # Create tabs
 roots_tab, welcome_tab, services_tab, form_tab = st.tabs(["Our Roots", "Welcome", "Services", "Honoree Form"])
@@ -71,11 +70,11 @@ Our family tree logo represents more than a design — it reflects our values:
 with welcome_tab:
         st.markdown("### Welcome to The Vitality Link!")
         st.markdown("""
-        I’m GRACE, your personal concierge. If you're here, you value a higher quality of life — and I can help. 
+        We're your personal concierge. So, if you're here, you value a higher quality of life — and we can help. 
         
         We call our clients **Honorees** because you are more than just a client — you are valued, celebrated, and worthy of seamless support. 
         
-        Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support or social enrichment — I’ll guide you every step of the way.
+        Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support or social enrichment — we’ll guide you every step of the way.
         """)
 
 # Services tab
@@ -126,13 +125,12 @@ with form_tab:
         submit = st.form_submit_button("Submit")
 
     if submit:
-        st.success(f"Thank you, {full_name}! GRACE will follow up at {email}.")
+        st.success(f"Thank you, {full_name}! We will follow up at {email}.")
         st.info("Your journey to a fulfilling and intuitive experience begins now.")
 
 # Footer and contact
 st.markdown("---")
-st.markdown("*GRACE is empowered by IND Designs*")
-st.write("For support, email shellyland@thevitalitylink.com")
+st.markdown("*Empowered by IND Designs*")
 
 
 
