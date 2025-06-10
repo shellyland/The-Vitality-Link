@@ -147,5 +147,4 @@ with form_tab:
 
 # Footer and contact
 st.markdown("---")
-st.markdown("*Empowered by IND Designs*")
-st.markdown("COPYRIGHT ©2025")
+st.markdown("*Empowered by IND Designs|COPYRIGHT©2025*")
