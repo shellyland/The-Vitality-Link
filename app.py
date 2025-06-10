@@ -59,7 +59,7 @@ st.markdown("""
 # HEADER IMAGE
 st.markdown("""
 <div class="header-container">
-    <img src="/mnt/data/header.jpg .png" alt="The Vitality Link Header">
+    <img src="https://drive.google.com/file/d/1ilymmdJOxE1vv35wZ1tm1LltgewImFp1/view?usp=sharing"The Vitality Link Header">
 </div>
 """, unsafe_allow_html=True)
 
