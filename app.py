@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page configuration
-st.set_page_config(page_title="Golden Lifestyle Solutions", layout="centered")
+st.set_page_config(page_title="The Vitality Link | Golden Lifestyle Solutions", layout="centered")
 
 # Custom CSS for bronze styling and header image
 st.markdown("""
@@ -64,7 +64,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Branding
-st.title("The Vitality Link | Golden Lifestyle Solutions")
+st.title("Golden Lifestyle Solutions")
 st.subheader("**Elevating life’s rhythm with trusted, non-medical resources.**")
 
 # Tabs
@@ -147,4 +147,4 @@ with form_tab:
 
 # Footer and contact
 st.markdown("---")
-st.markdown("*Empowered by IND Designs|COPYRIGHT©2025*")
+st.markdown("*Empowered by IND Designs | COPYRIGHT©2025*")
