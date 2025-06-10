@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page configuration
-st.set_page_config(page_title="The Vitality Link | Golden Lifestyle Solutions", layout="centered")
+st.set_page_config(page_title="Golden Lifestyle Solutions", layout="centered")
 
 # Custom CSS for bronze styling and header image
 st.markdown("""
