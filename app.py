@@ -74,13 +74,13 @@ roots_tab, welcome_tab, services_tab, form_tab = st.tabs(["Our Roots", "Welcome"
 with roots_tab:
     st.markdown("## Our Roots")
     st.markdown("""
-At **The Vitality Link**, we don’t just serve — we honor.  
-Our family tree logo represents more than a design — it reflects our values:
+At **The Vitality Link**, we don’t just serve — we honor.
 
-- **Connection** – A trusted network of resources and meaningful relationships.  
-- **Growth** – Supporting vitality, independence, and well-being.  
-- **Roots** – Inspired by **Ma Clemmie**, my second mom — whose love, nurturing, and resilience shaped my world. When she became unwell, I was her caregiver — a full-circle act of love.  
-- **Elevation** – Because life’s rhythm, like trees, is about rising, reaching, and thriving — at every age.
+Life’s rhythm is similar to a tree’s seasonal changes. Just as trees adapt and flourish through each cycle, we too can thrive as we navigate transitions. This principle shapes our core values:
+
+- **Growth** — Leaves represent regeneration and renewal.
+- **Connection** — Branches symbolize a trusted network of supportive resources.
+- **Resilience** — Roots embody the lasting legacy of our founder’s grandparents. Caring for them in their later years was a full-circle privilege — their influence is the foundation of our mission.
 """)
 
 # Welcome tab
