@@ -58,9 +58,9 @@ st.markdown("""
 
 # HEADER IMAGE
 st.markdown("""
-<div class="header-container">
-    <img src="https://www.google.com/search?vsrid=CLGaidDG-JyAhAEQAhgBIiRiNDZjY2Q0Mi02OGE1LTRiYTUtYWM2MS04NmE2ZWUzNTUxYzcyBiICYmkoAziz0bHT6uWNAw&vsint=CAIqDAoCCAcSAggKGAEgATojChYNAAAAPxUAAAA_HQAAgD8lAACAPzABEOgHGPQDJQAAgD8&udm=26&lns_mode=un&source=lns.web.gisbubb&vsdim=1000,500&gsessionid=HjTNGOZ4i8GjVQMSx1zcCGOmWNHACczbd_mM5YkOC26pqTHZ_GVJeA&lsessionid=4abdKjgWMFAMvAmc0E3DHwHPD1xC8Vu6vDzVBXHEesqaAHj_GRp6Fw&lns_surface=26&lns_vfs=e&qsubts=1749523427800&biw=1920&bih=953&hl=en"The Vitality Link Header">
-</div>
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/shellyland/vitality-link-assets/main/vitalityheader.jpg" alt="The Vitality Link Header" style="width: 100%; max-width: 800px; border-radius: 12px;">
+    </div>
 """, unsafe_allow_html=True)
 
 # Branding
