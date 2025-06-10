@@ -148,4 +148,4 @@ with form_tab:
 # Footer and contact
 st.markdown("---")
 st.markdown("*Empowered by IND Designs*")
-st.markdown("For support, contact us at: shellyland@thevitalitylink.com")
+st.markdown("COPYRIGHT ©2025")
