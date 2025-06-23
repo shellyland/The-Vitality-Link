@@ -1,5 +1,44 @@
 import streamlit as st
 
+# Create tabs for the service levels
+tabs = st.tabs(["Bronze", "Silver", "Gold", "Platinum"])
+
+# Bronze Tab
+with tabs[0]:
+    st.markdown("## Bronze Package")
+    st.markdown("""
+    - Local transportation assistance (non-medical)
+    - Errand running
+    - Wellness check-in (phone call or virtual)
+    """)
+
+# Silver Tab
+with tabs[1]:
+    st.markdown("## Silver Package")
+    st.markdown("""
+    - All Bronze services
+    - Companionship during local outings (appointments, shopping, etc.)
+    - Assistance with scheduling appointments
+    """)
+
+# Gold Tab
+with tabs[2]:
+    st.markdown("## Gold Package")
+    st.markdown("""
+    - All Silver services
+    - Event planning and coordination for honorees (birthday, social, etc.)
+    - Dedicated personal concierge for priority scheduling
+    """)
+
+# Platinum Tab
+with tabs[3]:
+    st.markdown("## Platinum Package")
+    st.markdown("""
+    - All Gold services
+    - Custom wellness experience (personalized outings, special requests)
+    - Full priority access with on-demand concierge support
+    """)
+
 # Page configuration
 st.set_page_config(page_title="The Vitality Link", layout="centered")
 
