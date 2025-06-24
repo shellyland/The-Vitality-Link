@@ -3,7 +3,7 @@ import streamlit as st
 # Page configuration
 st.set_page_config(page_title="The Vitality Link", layout="centered")
 
-# Custom CSS for tier colors and header image
+# Custom CSS for main tabs and Tiers sub-tabs
 st.markdown("""
     <style>
     /* HEADER IMAGE */
@@ -18,83 +18,23 @@ st.markdown("""
         border-radius: 12px;
     }
 
-    /* BRONZE TAB */
-    div[data-testid="stTabs"] button:nth-child(1) {
-        color: #CD7F32;  /* Bronze */
+    /* MAIN TABS STYLING (Our Roots, Welcome, Tiers, Form) */
+    div[data-testid="stTabs"] button {
+        color: #CD7F32;  /* Classic Bronze */
         font-weight: bold;
         background-color: #F9F5EF;
         border-bottom: 2px solid transparent;
     }
 
-    div[data-testid="stTabs"] button:nth-child(1):hover {
+    div[data-testid="stTabs"] button:hover {
         color: #D8A25C !important;
         border-bottom: 2px solid #D8A25C;
         background-color: #fefbf8;
     }
 
-    div[data-testid="stTabs"] button:nth-child(1)[aria-selected="true"] {
+    div[data-testid="stTabs"] button[aria-selected="true"] {
         color: #CD7F32 !important;
         border-bottom: 3px solid #CD7F32 !important;
-        background-color: #fffaf3;
-    }
-
-    /* SILVER TAB */
-    div[data-testid="stTabs"] button:nth-child(2) {
-        color: #C0C0C0;  /* Silver */
-        font-weight: bold;
-        background-color: #F9F5EF;
-        border-bottom: 2px solid transparent;
-    }
-
-    div[data-testid="stTabs"] button:nth-child(2):hover {
-        color: #A9A9A9 !important;
-        border-bottom: 2px solid #A9A9A9;
-        background-color: #fefbf8;
-    }
-
-    div[data-testid="stTabs"] button:nth-child(2)[aria-selected="true"] {
-        color: #C0C0C0 !important;
-        border-bottom: 3px solid #C0C0C0 !important;
-        background-color: #fffaf3;
-    }
-
-    /* GOLD TAB */
-    div[data-testid="stTabs"] button:nth-child(3) {
-        color: #FFD700;  /* Bright Gold */
-        font-weight: bold;
-        background-color: #F9F5EF;
-        border-bottom: 2px solid transparent;
-    }
-
-    div[data-testid="stTabs"] button:nth-child(3):hover {
-        color: #FFC300 !important;
-        border-bottom: 2px solid #FFC300;
-        background-color: #fefbf8;
-    }
-
-    div[data-testid="stTabs"] button:nth-child(3)[aria-selected="true"] {
-        color: #FFD700 !important;
-        border-bottom: 3px solid #FFD700 !important;
-        background-color: #fffaf3;
-    }
-
-    /* PLATINUM TAB */
-    div[data-testid="stTabs"] button:nth-child(4) {
-        color: #E5E4E2;  /* Platinum */
-        font-weight: bold;
-        background-color: #F9F5EF;
-        border-bottom: 2px solid transparent;
-    }
-
-    div[data-testid="stTabs"] button:nth-child(4):hover {
-        color: #D3D3D3 !important;
-        border-bottom: 2px solid #D3D3D3;
-        background-color: #fefbf8;
-    }
-
-    div[data-testid="stTabs"] button:nth-child(4)[aria-selected="true"] {
-        color: #E5E4E2 !important;
-        border-bottom: 3px solid #E5E4E2 !important;
         background-color: #fffaf3;
     }
 
@@ -118,7 +58,7 @@ st.subheader("**Elevating life’s rhythm with trusted, non-medical resources.**
 # Top Tabs
 roots_tab, welcome_tab, tiers_tab, form_tab = st.tabs(["Our Roots", "Welcome", "Tiers", "Honoree Form"])
 
-# Roots Tab
+# Our Roots Tab
 with roots_tab:
     st.markdown("## Our Roots")
     st.markdown("""
@@ -142,43 +82,55 @@ with welcome_tab:
     Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support, or social enrichment — we’ll guide you every step of the way.
     """)
 
-# Tiers Tab with Sub-Tabs
+# Tiers Tab with Black Background and Colorful Sub-Tabs
 with tiers_tab:
-    st.markdown("### Our Service Tiers")
+    st.markdown("""
+    <div style="background-color:black; padding: 20px; border-radius: 10px;">
+    """, unsafe_allow_html=True)
 
     bronze_tab, silver_tab, gold_tab, platinum_tab = st.tabs(["Bronze", "Silver", "Gold", "Platinum"])
 
     with bronze_tab:
-        st.markdown("## Bronze Package")
         st.markdown("""
-        - Local transportation assistance (non-medical)
-        - Errand running
-        - Wellness check-in (phone call or virtual)
-        """)
+        <h2 style="color:#CD7F32;">Bronze Package</h2>
+        <ul style="color:white;">
+            <li>Local transportation assistance (non-medical)</li>
+            <li>Errand running</li>
+            <li>Wellness check-in (phone call or virtual)</li>
+        </ul>
+        """, unsafe_allow_html=True)
 
     with silver_tab:
-        st.markdown("## Silver Package")
         st.markdown("""
-        - All Bronze services
-        - Companionship during local outings (appointments, shopping, etc.)
-        - Assistance with scheduling appointments
-        """)
+        <h2 style="color:#C0C0C0;">Silver Package</h2>
+        <ul style="color:white;">
+            <li>All Bronze services</li>
+            <li>Companionship during local outings (appointments, shopping, etc.)</li>
+            <li>Assistance with scheduling appointments</li>
+        </ul>
+        """, unsafe_allow_html=True)
 
     with gold_tab:
-        st.markdown("## Gold Package")
         st.markdown("""
-        - All Silver services
-        - Event planning and coordination for honorees (birthday, social, etc.)
-        - Dedicated personal concierge for priority scheduling
-        """)
+        <h2 style="color:#FFD700;">Gold Package</h2>
+        <ul style="color:white;">
+            <li>All Silver services</li>
+            <li>Event planning and coordination for honorees (birthday, social, etc.)</li>
+            <li>Dedicated personal concierge for priority scheduling</li>
+        </ul>
+        """, unsafe_allow_html=True)
 
     with platinum_tab:
-        st.markdown("## Platinum Package")
         st.markdown("""
-        - All Gold services
-        - Custom wellness experience (personalized outings, special requests)
-        - Full priority access with on-demand concierge support
-        """)
+        <h2 style="color:#E5E4E2;">Platinum Package</h2>
+        <ul style="color:white;">
+            <li>All Gold services</li>
+            <li>Custom wellness experience (personalized outings, special requests)</li>
+            <li>Full priority access with on-demand concierge support</li>
+        </ul>
+        """, unsafe_allow_html=True)
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # Honoree Form Tab
 with form_tab:
