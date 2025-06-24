@@ -3,7 +3,7 @@ import streamlit as st
 # Page configuration
 st.set_page_config(page_title="The Vitality Link", layout="centered")
 
-# Custom CSS for bronze styling and header image
+# Custom CSS for tier colors and header image
 st.markdown("""
     <style>
     /* HEADER IMAGE */
@@ -18,40 +18,88 @@ st.markdown("""
         border-radius: 12px;
     }
 
-    /* TAB STYLING */
-    div[data-testid="stTabs"] button {
-        color: #CD7F32;  /* Classic Bronze */
+    /* BRONZE TAB */
+    div[data-testid="stTabs"] button:nth-child(1) {
+        color: #CD7F32;  /* Bronze */
         font-weight: bold;
         background-color: #F9F5EF;
         border-bottom: 2px solid transparent;
     }
 
-    div[data-testid="stTabs"] button:hover {
+    div[data-testid="stTabs"] button:nth-child(1):hover {
         color: #D8A25C !important;
         border-bottom: 2px solid #D8A25C;
         background-color: #fefbf8;
     }
 
-    div[data-testid="stTabs"] button[aria-selected="true"] {
+    div[data-testid="stTabs"] button:nth-child(1)[aria-selected="true"] {
         color: #CD7F32 !important;
         border-bottom: 3px solid #CD7F32 !important;
         background-color: #fffaf3;
     }
 
+    /* SILVER TAB */
+    div[data-testid="stTabs"] button:nth-child(2) {
+        color: #C0C0C0;  /* Silver */
+        font-weight: bold;
+        background-color: #F9F5EF;
+        border-bottom: 2px solid transparent;
+    }
+
+    div[data-testid="stTabs"] button:nth-child(2):hover {
+        color: #A9A9A9 !important;
+        border-bottom: 2px solid #A9A9A9;
+        background-color: #fefbf8;
+    }
+
+    div[data-testid="stTabs"] button:nth-child(2)[aria-selected="true"] {
+        color: #C0C0C0 !important;
+        border-bottom: 3px solid #C0C0C0 !important;
+        background-color: #fffaf3;
+    }
+
+    /* GOLD TAB */
+    div[data-testid="stTabs"] button:nth-child(3) {
+        color: #FFD700;  /* Bright Gold */
+        font-weight: bold;
+        background-color: #F9F5EF;
+        border-bottom: 2px solid transparent;
+    }
+
+    div[data-testid="stTabs"] button:nth-child(3):hover {
+        color: #FFC300 !important;
+        border-bottom: 2px solid #FFC300;
+        background-color: #fefbf8;
+    }
+
+    div[data-testid="stTabs"] button:nth-child(3)[aria-selected="true"] {
+        color: #FFD700 !important;
+        border-bottom: 3px solid #FFD700 !important;
+        background-color: #fffaf3;
+    }
+
+    /* PLATINUM TAB */
+    div[data-testid="stTabs"] button:nth-child(4) {
+        color: #E5E4E2;  /* Platinum */
+        font-weight: bold;
+        background-color: #F9F5EF;
+        border-bottom: 2px solid transparent;
+    }
+
+    div[data-testid="stTabs"] button:nth-child(4):hover {
+        color: #D3D3D3 !important;
+        border-bottom: 2px solid #D3D3D3;
+        background-color: #fefbf8;
+    }
+
+    div[data-testid="stTabs"] button:nth-child(4)[aria-selected="true"] {
+        color: #E5E4E2 !important;
+        border-bottom: 3px solid #E5E4E2 !important;
+        background-color: #fffaf3;
+    }
+
     div[data-testid="stTabs"] > div[role="tablist"] {
         border-bottom: 2px solid #CD7F32;
-    }
-
-    /* MAILTO LINK STYLING */
-    a[href^="mailto"] {
-        color: #CD7F32 !important;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    a[href^="mailto"]:hover {
-        color: #D8A25C !important;
-        text-decoration: underline;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -158,4 +206,3 @@ with form_tab:
 # Footer
 st.markdown("---")
 st.markdown("*Empowered by IND Designs | COPYRIGHT©2025*")
-
