@@ -67,10 +67,10 @@ st.markdown("""
 st.title("Golden Lifestyle Solutions")
 st.subheader("**Elevating life’s rhythm with trusted, non-medical resources.**")
 
-# Tabs
-roots_tab, welcome_tab, services_tab, form_tab = st.tabs(["Our Roots", "Welcome", "Services", "Honoree Form"])
+# Top Tabs
+roots_tab, welcome_tab, tiers_tab, form_tab = st.tabs(["Our Roots", "Welcome", "Tiers", "Honoree Form"])
 
-# Roots tab
+# Roots Tab
 with roots_tab:
     st.markdown("## Our Roots")
     st.markdown("""
@@ -83,7 +83,7 @@ Life’s rhythm is similar to a tree’s seasonal changes. Just as trees adapt a
 - **Resilience** — Roots embody the lasting legacy of our founder’s grandparents. Caring for them in their later years was a full-circle privilege — and that experience became the foundation of our mission.
 """)
 
-# Welcome tab
+# Welcome Tab
 with welcome_tab:
     st.markdown("### Welcome to The Vitality Link!")
     st.markdown("""
@@ -94,46 +94,45 @@ with welcome_tab:
     Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support, or social enrichment — we’ll guide you every step of the way.
     """)
 
-# Create tabs for the service levels
-tabs = st.tabs(["Bronze", "Silver", "Gold", "Platinum"])
+# Tiers Tab with Sub-Tabs
+with tiers_tab:
+    st.markdown("### Our Service Tiers")
 
-# Bronze Tab
-with tabs[0]:
-    st.markdown("## Bronze Package")
-    st.markdown("""
-    - Local transportation assistance (non-medical)
-    - Errand running
-    - Wellness check-in (phone call or virtual)
-    """)
+    bronze_tab, silver_tab, gold_tab, platinum_tab = st.tabs(["Bronze", "Silver", "Gold", "Platinum"])
 
-# Silver Tab
-with tabs[1]:
-    st.markdown("## Silver Package")
-    st.markdown("""
-    - All Bronze services
-    - Companionship during local outings (appointments, shopping, etc.)
-    - Assistance with scheduling appointments
-    """)
+    with bronze_tab:
+        st.markdown("## Bronze Package")
+        st.markdown("""
+        - Local transportation assistance (non-medical)
+        - Errand running
+        - Wellness check-in (phone call or virtual)
+        """)
 
-# Gold Tab
-with tabs[2]:
-    st.markdown("## Gold Package")
-    st.markdown("""
-    - All Silver services
-    - Event planning and coordination for honorees (birthday, social, etc.)
-    - Dedicated personal concierge for priority scheduling
-    """)
+    with silver_tab:
+        st.markdown("## Silver Package")
+        st.markdown("""
+        - All Bronze services
+        - Companionship during local outings (appointments, shopping, etc.)
+        - Assistance with scheduling appointments
+        """)
 
-# Platinum Tab
-with tabs[3]:
-    st.markdown("## Platinum Package")
-    st.markdown("""
-    - All Gold services
-    - Custom wellness experience (personalized outings, special requests)
-    - Full priority access with on-demand concierge support
-    """)
+    with gold_tab:
+        st.markdown("## Gold Package")
+        st.markdown("""
+        - All Silver services
+        - Event planning and coordination for honorees (birthday, social, etc.)
+        - Dedicated personal concierge for priority scheduling
+        """)
 
-# Honoree Form tab
+    with platinum_tab:
+        st.markdown("## Platinum Package")
+        st.markdown("""
+        - All Gold services
+        - Custom wellness experience (personalized outings, special requests)
+        - Full priority access with on-demand concierge support
+        """)
+
+# Honoree Form Tab
 with form_tab:
     st.markdown("### Honoree Form")
     with st.form("honoree_form"):
@@ -156,6 +155,7 @@ with form_tab:
         st.success(f"Thank you, {full_name}! We will follow up at {email}.")
         st.info("Your journey to a fulfilling and intuitive experience begins now.")
 
-# Footer and contact
+# Footer
 st.markdown("---")
 st.markdown("*Empowered by IND Designs | COPYRIGHT©2025*")
+
