@@ -1,8 +1,8 @@
-# Tabs
-roots_tab, welcome_tab, tiers_tab, form_tab = st.tabs(["Our Roots", "Welcome", "Tiers", "Honoree Form"])
+# Tabs layout — Main sections
+main_tabs = st.tabs(["Our Roots", "Welcome", "Tiers", "Honoree Form"])
 
-# Roots tab
-with roots_tab:
+# --- OUR ROOTS TAB ---
+with main_tabs[0]:
     st.markdown("## Our Roots")
     st.markdown("""
 At **The Vitality Link**, we don’t just serve — we honor.
@@ -14,8 +14,8 @@ Life’s rhythm is similar to a tree’s seasonal changes. Just as trees adapt a
 - **Resilience** — Roots embody the lasting legacy of our founder’s grandparents. Caring for them in their later years was a full-circle privilege — and that experience became the foundation of our mission.
 """)
 
-# Welcome tab
-with welcome_tab:
+# --- WELCOME TAB ---
+with main_tabs[1]:
     st.markdown("### Welcome to The Vitality Link!")
     st.markdown("""
 We're your personal concierge. If you're here, you value a higher quality of life — and we can help. 
@@ -25,45 +25,45 @@ We call our clients **Honorees** because you are more than just a client — you
 Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support, or social enrichment — we’ll guide you every step of the way.
 """)
 
-# Tiers tab with sub-tabs
-with tiers_tab:
+# --- TIERS TAB WITH SUBTABS ---
+with main_tabs[2]:
     st.markdown("## Concierge Service Tiers")
     tier_tabs = st.tabs(["Bronze", "Silver", "Gold", "Platinum"])
 
     with tier_tabs[0]:
         st.markdown("### Bronze Package")
         st.markdown("""
-        - Local transportation assistance (non-medical)  
-        - Errand running  
-        - Wellness check-in (phone call or virtual)  
-        """)
+- Local transportation assistance (non-medical)  
+- Errand running  
+- Wellness check-in (phone call or virtual)  
+""")
 
     with tier_tabs[1]:
         st.markdown("### Silver Package")
         st.markdown("""
-        - All Bronze services  
-        - Companionship during local outings (appointments, shopping, etc.)  
-        - Assistance with scheduling appointments  
-        """)
+- All Bronze services  
+- Companionship during local outings (appointments, shopping, etc.)  
+- Assistance with scheduling appointments  
+""")
 
     with tier_tabs[2]:
         st.markdown("### Gold Package")
         st.markdown("""
-        - All Silver services  
-        - Event planning and coordination for honorees (birthday, social, etc.)  
-        - Dedicated personal concierge for priority scheduling  
-        """)
+- All Silver services  
+- Event planning and coordination for honorees (birthday, social, etc.)  
+- Dedicated personal concierge for priority scheduling  
+""")
 
     with tier_tabs[3]:
         st.markdown("### Platinum Package")
         st.markdown("""
-        - All Gold services  
-        - Custom wellness experience (personalized outings, special requests)  
-        - Full priority access with on-demand concierge support  
-        """)
+- All Gold services  
+- Custom wellness experience (personalized outings, special requests)  
+- Full priority access with on-demand concierge support  
+""")
 
-# Honoree Form tab
-with form_tab:
+# --- HONOREE FORM TAB ---
+with main_tabs[3]:
     st.markdown("### Honoree Form")
     with st.form("honoree_form"):
         full_name = st.text_input("Full Name")
