@@ -1,7 +1,7 @@
-# Tabs layout — Main sections
+# Main navigation tabs
 main_tabs = st.tabs(["Our Roots", "Welcome", "Tiers", "Honoree Form"])
 
-# --- OUR ROOTS TAB ---
+# Our Roots Tab
 with main_tabs[0]:
     st.markdown("## Our Roots")
     st.markdown("""
@@ -11,58 +11,55 @@ Life’s rhythm is similar to a tree’s seasonal changes. Just as trees adapt a
 
 - **Growth** — Leaves represent regeneration and renewal.
 - **Connection** — Branches symbolize a trusted network of supportive resources.
-- **Resilience** — Roots embody the lasting legacy of our founder’s grandparents. Caring for them in their later years was a full-circle privilege — and that experience became the foundation of our mission.
+- **Resilience** — Roots embody the lasting legacy of our founder’s grandparents.
 """)
 
-# --- WELCOME TAB ---
+# Welcome Tab
 with main_tabs[1]:
     st.markdown("### Welcome to The Vitality Link!")
     st.markdown("""
-We're your personal concierge. If you're here, you value a higher quality of life — and we can help. 
+We're your personal concierge. If you're here, you value a higher quality of life — and we can help.
 
-We call our clients **Honorees** because you are more than just a client — you are valued, celebrated, and worthy of seamless support. 
+We call our clients **Honorees** because you are more than just a client — you are valued, celebrated, and worthy of seamless support.
 
 Whether you need a hand with errands, non-medical transportation, wellness check-ins, digital support, or social enrichment — we’ll guide you every step of the way.
 """)
 
-# --- TIERS TAB WITH SUBTABS ---
+# Tiers Tab (Sub-tabs inside)
 with main_tabs[2]:
     st.markdown("## Concierge Service Tiers")
-    tier_tabs = st.tabs(["Bronze", "Silver", "Gold", "Platinum"])
+    tier = st.selectbox("Choose a Tier", ["Bronze", "Silver", "Gold", "Platinum"])
 
-    with tier_tabs[0]:
+    if tier == "Bronze":
         st.markdown("### Bronze Package")
         st.markdown("""
 - Local transportation assistance (non-medical)  
 - Errand running  
-- Wellness check-in (phone call or virtual)  
+- Wellness check-in (phone call or virtual)
 """)
-
-    with tier_tabs[1]:
+    elif tier == "Silver":
         st.markdown("### Silver Package")
         st.markdown("""
 - All Bronze services  
 - Companionship during local outings (appointments, shopping, etc.)  
-- Assistance with scheduling appointments  
+- Assistance with scheduling appointments
 """)
-
-    with tier_tabs[2]:
+    elif tier == "Gold":
         st.markdown("### Gold Package")
         st.markdown("""
 - All Silver services  
 - Event planning and coordination for honorees (birthday, social, etc.)  
-- Dedicated personal concierge for priority scheduling  
+- Dedicated personal concierge for priority scheduling
 """)
-
-    with tier_tabs[3]:
+    elif tier == "Platinum":
         st.markdown("### Platinum Package")
         st.markdown("""
 - All Gold services  
 - Custom wellness experience (personalized outings, special requests)  
-- Full priority access with on-demand concierge support  
+- Full priority access with on-demand concierge support
 """)
 
-# --- HONOREE FORM TAB ---
+# Honoree Form
 with main_tabs[3]:
     st.markdown("### Honoree Form")
     with st.form("honoree_form"):
@@ -76,8 +73,11 @@ with main_tabs[3]:
         )
         services_interested = st.multiselect(
             "Which services are you interested in?",
-            ["Errand Assistance", "Appointment Transportation", "Wellness & Independence Support", "Technology Assistance", 
-             "Community-Based Social Engagement", "Fitness & Wellness", "Financial Literacy Education", "Sexual Health Awareness"]
+            [
+                "Errand Assistance", "Appointment Transportation", "Wellness & Independence Support",
+                "Technology Assistance", "Community-Based Social Engagement", "Fitness & Wellness",
+                "Financial Literacy Education", "Sexual Health Awareness"
+            ]
         )
         submit = st.form_submit_button("Submit")
 
