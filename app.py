@@ -69,8 +69,6 @@ Life’s rhythm is similar to a tree’s seasonal changes. Just as trees adapt a
 - **Growth** — Leaves represent regeneration and renewal.  
 - **Connection** — Branches symbolize a trusted network of supportive resources.  
 - **Resilience** — Roots embody the lasting legacy of our founder’s grandparents. Caring for them in their later years was a full-circle privilege — and that experience became the foundation of our mission.
-
-That’s why those we serve are called **Honorees** — because aging should be celebrated, not diminished.
 """)
 
 # --- WELCOME ---
